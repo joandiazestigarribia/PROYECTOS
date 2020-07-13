@@ -44,7 +44,7 @@ function getTasks() { /* consulta los datos del localstorage y los muestra por p
         <div class="card-body">
             <p>${title} - ${description}</p> 
             <a class="btn btn-danger" onclick="deleteTask('${title}')">
-                Delete
+                Eliminar tarea
             </a>
             </div>
         </div>`
