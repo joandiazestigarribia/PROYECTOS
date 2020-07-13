@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript Tasks App</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> <!-- framewoork boostrap 4 -->
+    </head>
+    <body>
+        
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-light bg-light"> <!-- crea interfaz con navegacion "nav" -->
+            <div class="container"> <!-- div container para centrar el texto -->
+                <a href="#" class="navbar-brand">Tasks App</a>
+            </div>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <div class="container"> <!-- nuevamente para centrar el contenido -->
+            <div class="row pt-5"> <!-- agrega columnas --> <!-- pt-5 para espacio entre task app y add a todo -->
+                <div class="col-md-4"> <!-- 4 columnas hacia la izquierda -->
+                    <div class="card"> <!-- card, para crear un formulario -->
+                       <div class="card-body"> <!-- cuerpo de la tarjeta -->
+                            <form id="formTask"> <!-- formulario. tiene un id para obtenerlo desde js -->
+                                <div class="form-group"> <!-- para agrupar un formulario -->
+                                    <input type="text" id="title" placeholder="Add A Todo" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="description" rows="8" cols="80" class="form-control" placeholder="Add a Description"></textarea><!-- ordenar gran cantidad de texto -->
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block"> <!-- agrega un boton, btn primary para estilizarlo, btn block para que ocupe el ancho de la tarjeta  -->
+                                    Save <!-- texto dentro del boton -->
+                                </button> 
+                            </form>
+                       </div> 
+                    </div>
+                </div>
+                <div class="col-md-8"> <!-- 8 column hacia la dcha -->
+                    <div id="tasks"></div> <!-- para poder agregar las tareas atraves de js -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- SCRIPTS -->
+        <script src="app.js"></script>
+    </body>
+</html>
